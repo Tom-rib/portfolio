@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Mon profils  */
+
+section#profil {
+    background: #f4f4f4;
+    display: flex ;
+    flex-direction: row ;
+
+}
+
+
+
+
+
+img {
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    width : 300px;
+    height : 400px;
+}
+
+.container-img .infos-hover i{
+    margin-top:60px;
+    font-size:50px;
+
+
+}
+.presentation {
+
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+
+/* Mes compétences */
+section#competences {
+    background: #e2e2e2;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+/* Mes projets */
+
+section#projets {
+    background: #d0d0d0;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+
+/* Mes contacts */
+
+section#contacts {
+    background: #bebebe;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+
+/* bare nav */
+
+
+nav
+{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 98%;
+}
+
+nav > ul
+{
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgrey;
+  box-shadow: 5px 5px 15px black;
+}
+
+section
+{
+  margin-top: 50px;
+}
+
+.logotr
+{
+  background-image: url("./image/logo-TR.png");
+  width: 150px;
+  height: 60px;
+  background-size: cover;
+}
+
+nav > ul > li
+{
+  align-self: center;
+}
+
+
+
+
+/* boutton */
+
+
+/* CSS */
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+
+
+
+
+
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+/* li {
+  display: inline;
+} */
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link,
+a:visited,
+a:focus {
+  background: rgb(54, 53, 53);
+}
+
+a:hover {
+  background: rgb(168, 129, 0);
+}
+
+a:active {
+  background: rgb(129, 3, 3);
+  color: white;
+}
