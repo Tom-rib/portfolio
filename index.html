@@ -3,383 +3,723 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio — Tom Ribero</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure : Ansible, Kubernetes K3S, Docker Swarm, AWS, Active Directory, virtualisation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Favicons -->
+
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="shortcut icon" href="favicon-32x32.png">
 </head>
 <body>
 
+  <a class="skip" href="#main">Aller au contenu</a>
+
   <header>
-    <div class="wrap">
-      <div class="brand">
-        <img src="photo.png" alt="Tom Ribero">
-        <strong>Tom Ribero</strong>
-      </div>
+    <div class="wrap header-inner">
+      <a class="brand" href="#accueil">
+        <img src="photo.png" alt="">
+        <span class="brand__name">tom<span class="at">@</span>ribero</span>
+      </a>
 
-      <!-- Icône hamburger -->
-      <!-- Icône hamburger -->
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        ≡ menu
+      </button>
 
-      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
-
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#hero-terminal">À propos</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#formations">Parcours & Formations</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#accueil">accueil</a></li>
+          <li><a href="#projets">projets</a></li>
+          <li><a href="#competences">compétences</a></li>
+          <li><a href="#parcours">parcours</a></li>
+          <li><a href="#roadmap">roadmap</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
-   <!-- Hero Terminal -->
-   <section class="hero-terminal" id="hero-terminal">
-        <h1>root@Tom_Ribero<span class="cursor"></span></h1>
-        <div class="terminal-text">
-            <p>root@Tom_Ribero:~$ cat profile.txt</p>
-            <p style="color: #00ff00; margin: 0.5rem 0;">╔══════════════════════════════════════════════════════════════╗</p>
-            
-            <p style="margin-top: 1rem;"><span style="color: #facc15;">PROFIL</span></p>
+    <!-- ====================== ACCUEIL ====================== -->
+    <section id="accueil" class="hero">
+      <div class="wrap">
+        <div class="term">
+          <div class="term__bar">
+            <span class="term__dots"><i></i><i></i><i></i></span>
+            <span class="term__title">tom@portfolio: ~/profile</span>
+          </div>
+          <div class="term__body">
 
-            <p style="margin-left: 1.5rem; color: #80ff80;">• Nom: <strong>Tom Ribero</strong> | Localisation: <strong>Marseille, France</strong></p>
-            <p style="margin-left: 1.5rem; color: #80ff80;">• Status: <strong>Étudiant en Bachelor IT (B2)</strong> à La Plateforme</p>
-            <p style="margin-left: 1.5rem; color: #80ff80;">• Spécialité: <strong>Admin Systèmes, Réseaux & Cybersécurité</strong></p>
+            <p class="prompt">whoami</p>
 
-            <p style="margin-top: 1rem;"><span style="color: #facc15;">EN RECHERCHE</span></p>
+            <h1>Tom <span class="accent">Ribero</span><span class="cursor" aria-hidden="true"></span></h1>
+            <p class="hero__role">Administrateur Systèmes, Réseaux &amp; Sécurité — en formation</p>
 
-            <p style="margin-left: 1.5rem; color: #80ff80;">• Stage de <strong>2 mois</strong> du <strong>10 mai au 10 juillet 2026</strong></p>
-            <p style="margin-left: 1.5rem; color: #80ff80;">• Alternance dès <strong>Septembre 2026</strong> (4 semaines/1 semaine)</p>
-            
-            <p style="margin-top: 1rem;"><span style="color: #facc15;">PASSIONS</span></p>
-
-            <p style="margin-left: 1.5rem; color: #80ff80;">► Administration Systèmes  |  Automatisation  |  Infra Monitoring  |  Cybersécurité</p>
-            
-            <p style="margin-top: 1rem;"><span style="color: #facc15;">FEUILLE DE ROUTE</span></p>
-
-            <p style="margin-left: 1.5rem; color: #80ff80;">[SHORT]  Admin Systèmes & Réseaux</p>
-            <p style="margin-left: 1.5rem; color: #80ff80;">[MEDIUM] Admin Cloud / SysOps</p>
-            <p style="margin-left: 1.5rem; color: #80ff80;">[LONG]   DevOps Engineer & Security Specialist</p>
-            
-            <p style="color: #00ff00; margin: 1rem 0 0 0;">╚══════════════════════════════════════════════════════════════╝</p>
-
-            <p style="margin-top: 1.5rem; line-height: 1.8; color: #80ff80;">
-                Passionné par l'administration des systèmes, l'automatisation et la supervision d'infrastructures, 
-                je cherche à progresser vers l'administration cloud et DevOps, en développant une expertise complète 
-                en cybersécurité. Je souhaite rejoindre une équipe dynamique pour apprendre auprès de professionnels 
-                expérimentés et contribuer à la fiabilité, performance et sécurité des systèmes.
+            <p class="hero__pitch">
+              Je construis et documente des infrastructures de bout en bout : clusters Kubernetes et
+              Docker Swarm, automatisation Ansible, annuaires Active Directory et Entra ID, hyperviseurs.
+              Chaque projet ci-dessous est monté en labo, testé en panne réelle, puis documenté pour être
+              rejouable par quelqu'un d'autre. C'est ce que je cherche à faire en entreprise.
             </p>
-        </div>
 
-        <div class="actions">
-            <a href="#projets" class="btn">$ ./voir_projets.sh</a>
-            <a href="https://drive.google.com/file/d/1hel9hqkbWz-muxcYHdCWozTVLr0_g98X/view?usp=sharing" class="btn" target="_blank">$ ./telecharger_cv.pdf</a>
+            <ul class="facts">
+              <li>Marseille, France</li>
+              <li>Bachelor IT — La Plateforme (2024&ndash;2027)</li>
+              <li>Titre RNCP niveau&nbsp;6 visé</li>
+            </ul>
+
+            <div class="avail">
+              <div class="avail__item">
+                <span class="avail__label">Recherche</span>
+                <span class="avail__value"><strong>Alternance</strong> dès septembre 2026</span>
+              </div>
+              <div class="avail__item">
+                <span class="avail__label">Rythme</span>
+                <span class="avail__value">4 semaines entreprise / 1 semaine école</span>
+              </div>
+              <div class="avail__item">
+                <span class="avail__label">Cap</span>
+                <span class="avail__value">Admin sys &amp; réseaux → Cloud/SysOps → DevOps</span>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a href="#projets" class="btn btn--primary">./voir_les_projets</a>
+              <a href="https://drive.google.com/file/d/1hel9hqkbWz-muxcYHdCWozTVLr0_g98X/view?usp=sharing" class="btn" target="_blank" rel="noopener">cat cv.pdf</a>
+              <a href="mailto:tom.ribero@laplateforme.io" class="btn">mail -s "alternance"</a>
+            </div>
+
+          </div>
         </div>
+      </div>
     </section>
 
-
-    <!-- Projets -->
+    <!-- ====================== PROJETS ====================== -->
     <section id="projets">
-      <div class="section-head">
-        <h2>Projets</h2>
-        <p>root@Tom_Ribero:~$ ls -la</p>
-       <p>============================================================</p>
-      </div>
-      <div class="grid">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="prompt">ls -la ~/projets</p>
+          <h2>Projets</h2>
+          <p class="lede">
+            Projets d'infrastructure montés en labo, du besoin jusqu'à la documentation.
+            Chaque carte indique ce que j'ai réellement mis en place et avec quoi.
+          </p>
+        </div>
 
-         <div class="card"><h3><a href="https://github.com/Tom-rib/Architecte_AWS" target="_blank">Architecte_AWS</a></h3><p>Projet complet de déploiement d'infrastructure cloud couvrant 9 jobs progressifs. Maîtrise des services AWS essentiels : EC2, S3, RDS, Lambda, CloudWatch, Glue, Athena, ECS/Fargate et Step Functions. Infrastructure web scalable, APIs serverless, monitoring, ETL et orchestration de workflows.</p></div>
+        <h3 class="subhead">Les quatre les plus représentatifs</h3>
+        <div class="grid">
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/documentation_minilab" target="_blank">MINILAB</a></h3><p>Projet de déploiement d'une infrastructure réseau complète, sécurisée et maintenable pour une association : services centralisés (LDAP, NFS, DNS, DHCP), postes clients légers Debian, supervision, VPN, sécurité renforcée et interface de gestion web.</p></div>
-         
-         <div class="card"><h3><a href="https://github.com/Tom-rib/Arduino" target="_blank">Arduino</a></h3><p>Projet pédagogique basé sur un kit Arduino ! Vous y trouverez des exercices (nommés JOB) progressifs allant des bases de l'électricité aux projets complexes comme une station météo ou un jeu de mémoire.</p></div>
+          <article class="card card--featured" id="p-ansible">
+            <div class="card__head">
+              <h3>ansible-hardening</h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Administration sans agent d'une flotte Linux hétérogène (Debian/Ubuntu et Rocky) depuis
+              un serveur de contrôle unique, du durcissement jusqu'à la réponse à incident.
+            </p>
+            <ul class="card__did">
+              <li>Inventaire, playbooks et rôles réutilisables (<code>hardening_base</code>)</li>
+              <li>Durcissement SSH, comptes, pare-feu UFW, règles PAM</li>
+              <li>Centralisation des logs via Filebeat + templates Jinja2</li>
+              <li>Secrets chiffrés avec Ansible Vault</li>
+              <li>Scénario de réponse à incident et déploiement web sécurisé</li>
+            </ul>
+            <ul class="stack">
+              <li>Ansible</li><li>YAML</li><li>Jinja2</li><li>SSH</li><li>UFW</li><li>Filebeat</li><li>Vault</li>
+            </ul>
+          </article>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale" target="_blank">TrueNAS + Vaultwarden</a></h3><p>Projet de déploiement et sécurisation d'un serveur TrueNAS Scale complet, incluant la gestion des utilisateurs, les services SSH et SFTP, un gestionnaire de mots de passe Vaultwarden, une machine virtuelle imbriquée et l'authentification 2FA.</p></div>
+          <article class="card card--featured" id="p-k3s">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/kubernetes" target="_blank" rel="noopener">kubernetes-k3s</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Cluster Kubernetes K3S sur 3 VM Debian : un master, deux workers. Déploiement
+              d'applications conteneurisées, haute disponibilité et gestion du cycle de vie.
+            </p>
+            <ul class="card__did">
+              <li>Installation et fédération du cluster (master + workers)</li>
+              <li>Déploiement nginx, Apache et MariaDB avec replicas</li>
+              <li>Stockage persistant (PV/PVC), ConfigMaps et Secrets</li>
+              <li>Contrôle d'accès RBAC</li>
+              <li>Packaging et déploiement automatisés avec Helm</li>
+            </ul>
+            <ul class="stack">
+              <li>Kubernetes</li><li>K3S</li><li>Helm</li><li>Debian</li><li>RBAC</li><li>Bash</li>
+            </ul>
+          </article>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory" target="_blank">Active Directory</a></h3><p>Configuration d'une infrastructure Windows Server avec Active Directory, permettant une gestion centralisée et sécurisée des utilisateurs, des permissions et des ressources réseau grâce à des scripts d'automatisation.</p></div>
+          <article class="card card--featured" id="p-swarm">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Docker_Swarm" target="_blank" rel="noopener">docker-swarm-ha</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Cluster Docker Swarm multi-nœuds conçu pour la continuité d'activité : si un serveur
+              tombe, les services redémarrent ailleurs sans perte de données.
+            </p>
+            <ul class="card__did">
+              <li>Cluster multi-nœuds, services répliqués, réseaux overlay</li>
+              <li>Volumes partagés via NFS pour la persistance</li>
+              <li>Plans de continuité et de reprise (PCA/PRA) éprouvés</li>
+              <li>Tests de panne simulée et vérification du basculement</li>
+              <li>Scripts d'installation automatisés + guide de reprise en 15&nbsp;min</li>
+            </ul>
+            <ul class="stack">
+              <li>Docker</li><li>Swarm</li><li>NFS</li><li>Bash</li><li>Reverse proxy</li>
+            </ul>
+          </article>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank">Windows PXE ADK</a></h3><p>Déploiement d'un serveur PXE combinant Windows Server et solutions open source, pour automatiser et sécuriser l'installation de machines à partir d'images système Windows.</p></div>
-       
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Script_Systeme_Securite" target="_blank">Virtualisation, Scripts et Sécurité</a></h3><p>Guide structuré autour de la création et de la gestion d'une machine virtuelle sous Debian, des manipulations avancées en ligne de commande, de la surveillance système, de l'automatisation de tâches et des bonnes pratiques de sécurité.</p></div>
+          <article class="card card--featured" id="p-aws">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Architecte_AWS" target="_blank" rel="noopener">architecte-aws</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Neuf paliers progressifs de construction d'infrastructure cloud, de l'instance isolée
+              jusqu'à l'orchestration de traitements serverless.
+            </p>
+            <ul class="card__did">
+              <li>Infrastructure web scalable : EC2, S3, RDS</li>
+              <li>API serverless avec Lambda et Step Functions</li>
+              <li>Supervision et alerting CloudWatch</li>
+              <li>Chaîne ETL avec Glue et requêtage Athena</li>
+              <li>Conteneurs managés sur ECS/Fargate</li>
+            </ul>
+            <ul class="stack">
+              <li>AWS</li><li>EC2</li><li>S3</li><li>RDS</li><li>Lambda</li><li>CloudWatch</li><li>ECS/Fargate</li>
+            </ul>
+          </article>
 
+        </div>
+
+        <h3 class="subhead subhead--spaced">Le reste du labo</h3>
+        <div class="grid">
+
+          <article class="card" id="p-entra">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/ad-enterprise" target="_blank" rel="noopener">ad-enterprise</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Sécurisation d'une infrastructure d'identités sous Microsoft Entra ID, structurée
+              selon le modèle en tiers (Tier 0/1/2) pour cloisonner les comptes à privilèges.
+            </p>
+            <ul class="card__did">
+              <li>Activation du MFA et politiques d'accès conditionnel</li>
+              <li>Automatisation complète en PowerShell (Microsoft Graph)</li>
+              <li>Intégration et sécurisation d'applications</li>
+              <li>Détection et réponse aux incidents d'identité</li>
+            </ul>
+            <ul class="stack"><li>Entra ID</li><li>PowerShell 7</li><li>Microsoft Graph</li><li>MFA</li><li>IAM</li></ul>
+          </article>
+
+          <article class="card" id="p-hyperviseurs">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/NexusVirtualis" target="_blank" rel="noopener">nexus-virtualis</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Étude comparative de quatre hyperviseurs de type 1 en virtualisation imbriquée :
+              installation, exploitation et migration de VM entre plateformes.
+            </p>
+            <ul class="card__did">
+              <li>Hyper-V, VMware ESXi, Proxmox VE et XCP-ng en parallèle</li>
+              <li>Architecture imbriquée sous VMware Workstation Pro</li>
+              <li>Gestion des VM, snapshots et migrations inter-hyperviseurs</li>
+            </ul>
+            <ul class="stack"><li>ESXi</li><li>Proxmox VE</li><li>Hyper-V</li><li>XCP-ng</li><li>PowerShell</li></ul>
+          </article>
+
+          <article class="card" id="p-minilab">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/documentation_minilab" target="_blank" rel="noopener">minilab</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Infrastructure réseau complète pour une association : services centralisés, postes
+              clients légers et supervision, pensée pour être maintenable par un non-spécialiste.
+            </p>
+            <ul class="card__did">
+              <li>Services centralisés : LDAP, NFS, DNS, DHCP</li>
+              <li>Postes clients légers sous Debian</li>
+              <li>Accès distant par VPN et durcissement système</li>
+              <li>Supervision et interface de gestion web</li>
+            </ul>
+            <ul class="stack"><li>Debian</li><li>LDAP</li><li>NFS</li><li>DNS</li><li>DHCP</li><li>VPN</li></ul>
+          </article>
+
+          <article class="card" id="p-truenas">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale" target="_blank" rel="noopener">truenas-vaultwarden</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Serveur de stockage TrueNAS Scale déployé et sécurisé, hébergeant un gestionnaire
+              de mots de passe auto-hébergé.
+            </p>
+            <ul class="card__did">
+              <li>Gestion des utilisateurs, partages, SSH et SFTP</li>
+              <li>Vaultwarden auto-hébergé avec authentification 2FA</li>
+              <li>Machine virtuelle imbriquée pour les tests</li>
+            </ul>
+            <ul class="stack"><li>TrueNAS Scale</li><li>ZFS</li><li>Vaultwarden</li><li>2FA</li><li>SFTP</li></ul>
+          </article>
+
+          <article class="card" id="p-ad">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory" target="_blank" rel="noopener">active-directory</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Infrastructure Windows Server avec Active Directory : gestion centralisée des
+              utilisateurs, des permissions et des ressources réseau.
+            </p>
+            <ul class="card__did">
+              <li>Promotion du contrôleur de domaine et structure des OU</li>
+              <li>Stratégies de groupe et délégation de permissions</li>
+              <li>Scripts PowerShell d'automatisation des comptes</li>
+            </ul>
+            <ul class="stack"><li>Windows Server</li><li>Active Directory</li><li>GPO</li><li>PowerShell</li></ul>
+          </article>
+
+          <article class="card" id="p-pxe">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank" rel="noopener">deploiement-pxe</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Serveur de déploiement PXE combinant Windows Server et outils open source pour
+              installer des postes en masse à partir d'images système.
+            </p>
+            <ul class="card__did">
+              <li>Chaîne de démarrage réseau PXE et images Windows ADK</li>
+              <li>Installations automatisées et reproductibles</li>
+            </ul>
+            <ul class="stack"><li>PXE</li><li>Windows ADK</li><li>DHCP/TFTP</li></ul>
+          </article>
+
+          <article class="card" id="p-scripts">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Documentation_Script_Systeme_Securite" target="_blank" rel="noopener">scripts-systeme-securite</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Socle d'administration Debian en ligne de commande : surveillance système,
+              automatisation de tâches et bonnes pratiques de sécurité.
+            </p>
+            <ul class="card__did">
+              <li>Manipulations avancées en CLI et scripts Bash</li>
+              <li>Surveillance système et tâches planifiées (cron)</li>
+            </ul>
+            <ul class="stack"><li>Debian</li><li>Bash</li><li>cron</li><li>systemd</li></ul>
+          </article>
+
+          <article class="card" id="p-arduino">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Arduino" target="_blank" rel="noopener">arduino-labs</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Série d'exercices progressifs en électronique embarquée, dans la continuité de mon
+              BTS Systèmes Électroniques — des bases jusqu'à une station météo.
+            </p>
+            <ul class="card__did">
+              <li>Montages analogiques et numériques</li>
+              <li>Programmation C embarquée, capteurs et affichage</li>
+            </ul>
+            <ul class="stack"><li>Arduino</li><li>C</li><li>Électronique</li></ul>
+          </article>
+
+        </div>
       </div>
     </section>
 
- <!-- Formations & Parcours Professionnel -->
-<section id="formations">
-  <div class="section-head">
-    <h2>Parcours Professionnel & Formations</h2>
-       <p>root@Tom_Ribero:~$  dpkg --list | grep "diplômes"</p>
-       <p>============================================================</p>
-  </div>
-  <div class="grid">
+    <!-- ==================== COMPÉTENCES ==================== -->
+    <section id="competences">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="prompt">cat competences.txt</p>
+          <h2>Compétences</h2>
+          <p class="lede">
+            Niveau annoncé honnêtement, avec le projet qui le prouve. Je préfère assumer trois
+            niveaux clairs plutôt qu'afficher une liste plate où tout se vaut.
+          </p>
+        </div>
 
-    <div class="card">
-      <h4>La Plateforme - La Grande École du Numérique</h4>
-      <p>2024 - 2027</p>
-      <p><strong>Bachelor IT – Administrateur Système, Réseaux et Sécurité</strong></p>
-      <p>Apprentissage par projet, axé sur la résolution de problématiques concrètes en autonomie.</p>
-      <p>Formation diplômante sur 3 ans, délivrant un titre RNCP de niveau 6.</p>
-      <p><code class="code-terminal code-installing">$ ./installing_Admin_sys_res_secu</code></p>
-      <p>En cours</p>
-    </div>
+        <ul class="legend">
+          <li><span class="lvl lvl--3" aria-hidden="true"><i></i><i></i><i></i></span> Solide — autonome, utilisé sur plusieurs projets</li>
+          <li><span class="lvl lvl--2" aria-hidden="true"><i></i><i></i><i></i></span> En pratique — projet réalisé, en consolidation</li>
+          <li><span class="lvl lvl--1" aria-hidden="true"><i></i><i></i><i></i></span> Notions — abordé, pas encore approfondi</li>
+        </ul>
 
-    <div class="card">
-      <h4>Lycée du Rempart</h4>
-      <p>2014</p>
-      <p><strong>BTS en Systèmes Électroniques</strong></p>
-      <p>Conception et création de circuits électroniques : études et réalisation de circuits analogiques et numériques.</p>
-      <p>Programmation de systèmes électroniques en C pour le contrôle et l'automatisation des dispositifs.</p>
-      <p><code class="code-terminal code-completed">$ ./code-completed_Bts_Sys_Elec</code></p>
-      <p>Completed</p>
-    </div>
+        <div class="skills-grid">
 
-    <div class="card">
-      <h4>Lycée du Rempart</h4>
-      <p>2014</p>
-      <p><strong>Habilitation Électrique : BR</strong></p>
-      <p>Consignation d'une partie d'une installation pour son propre compte ou pour un exécutant sous sa responsabilité.</p>
-      <p>Respect strict des règles de sécurité pour la manipulation et l'entretien des installations électriques, mécaniques et électroniques.</p>
-      <p><code class="code-terminal code-completed">$ ./code-completed_Habil_BR</code></p>
-      <p>Completed</p>
-    </div>
+          <div class="skillset">
+            <h3>systemes_reseaux</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">Administration Linux (Debian, Ubuntu, Rocky)</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-minilab">minilab</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Windows Server &amp; Active Directory</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ad">active-directory</a>, <a href="#p-pxe">deploiement-pxe</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">SSH, SFTP, accès distant sécurisé</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">DNS, DHCP, LDAP, NFS</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-minilab">minilab</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">VPN &amp; segmentation réseau</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-minilab">minilab</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Routage &amp; commutation Cisco</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+              </li>
+            </ul>
+          </div>
 
-  </div>
-</section>
+          <div class="skillset">
+            <h3>conteneurs_orchestration</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">Docker (images, volumes, réseaux)</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-swarm">docker-swarm-ha</a>, <a href="#p-k3s">kubernetes-k3s</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Docker Swarm (HA, PCA/PRA)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-swarm">docker-swarm-ha</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Kubernetes / K3S</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-k3s">kubernetes-k3s</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Helm &amp; RBAC Kubernetes</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-k3s">kubernetes-k3s</a></span>
+              </li>
+            </ul>
+          </div>
 
+          <div class="skillset">
+            <h3>virtualisation_cloud</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">VMware (Workstation, ESXi)</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Proxmox VE, Hyper-V, XCP-ng</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">AWS (EC2, S3, RDS, Lambda, CloudWatch)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-aws">architecte-aws</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Microsoft Entra ID</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Stockage &amp; sauvegarde (TrueNAS, ZFS)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
+              </li>
+            </ul>
+          </div>
 
-<!-- Compétences Techniques -->
-<section id="competences">
-  <div class="section-head">
-    <h2>Compétences Techniques</h2>
-    <p>root@Tom_Ribero:~$ cat skills.txt</p>
-    <p>============================================================</p>
-  </div>
-  
-  <div class="terminal-grid">
-    <!-- Réseaux & Systèmes -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Réseaux & Systèmes</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Administration Linux/Windows Server</p>
-        <p class="skill-item"><span class="dir">├──</span> Active Directory</p>
-        <p class="skill-item"><span class="dir">├──</span> DHCP, VPN, SSH, SFTP, LDAP</p>
-        <p class="skill-item"><span class="dir">├──</span> NAS et TrueNAS</p>
-        <p class="skill-item"><span class="dir">├──</span> VoIP, Bastion, Boot PXE</p>
-        <p class="skill-item"><span class="dir">└──</span> Gestion de services réseaux</p>
+          <div class="skillset">
+            <h3>automatisation_scripts</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">Bash &amp; ligne de commande</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-scripts">scripts-systeme-securite</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Git &amp; GitHub</span>
+                <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ tous les projets sont versionnés et documentés</span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Ansible (playbooks, rôles, Vault)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">PowerShell 7 &amp; Microsoft Graph</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Python 3</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Tâches planifiées (cron, systemd timers)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-scripts">scripts-systeme-securite</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skillset">
+            <h3>securite</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">Durcissement Linux (SSH, UFW, PAM)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Gestion des identités, MFA, accès conditionnel</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Centralisation &amp; analyse de logs (Filebeat)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Gestion des secrets (Vault, Vaultwarden)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Réponse à incident (procédures)</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Analyse réseau (Wireshark)</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skillset">
+            <h3>programmation</h3>
+            <ul>
+              <li class="skill">
+                <span class="skill__name">C / C++ &amp; embarqué</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-arduino">arduino-labs</a>, BTS Systèmes Électroniques</span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">HTML, CSS, PHP</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ ce portfolio</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="tools-note">
+          <strong>Environnement de travail</strong> — VS&nbsp;Code, Vim, Git, terminal au quotidien.
+          J'utilise aussi des assistants IA (Claude Code, Copilot) pour accélérer la documentation
+          et les scripts&nbsp;: un outil, pas une compétence.
+        </p>
       </div>
-    </div>
+    </section>
 
-    <!-- Virtualisation & Cloud -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Virtualisation & Cloud</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> VMWare</p>
-        <p class="skill-item"><span class="dir">├──</span> AWS (EC2, S3, RDS, Lambda, CloudWatch)</p>
-        <p class="skill-item"><span class="dir">├──</span> Microsoft Azure</p>
-        <p class="skill-item"><span class="dir">├──</span> Entra ID (Gestion d'identités)</p>
-        <p class="skill-item"><span class="dir">├──</span> Configuration Cisco</p>
-        <p class="skill-item"><span class="dir">├──</span> Supervision d'infrastructures virtuelles</p>
-        <p class="skill-item"><span class="dir">├──</span> Stockage et sauvegarde de données</p>
-        <p class="skill-item"><span class="dir">└──</span> Gestion d'infrastructures virtuelles</p>
+    <!-- ====================== PARCOURS ====================== -->
+    <section id="parcours">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="prompt">history --formation</p>
+          <h2>Parcours</h2>
+        </div>
+
+        <ul class="timeline">
+          <li class="is-current">
+            <span class="tl__date">2024 &rarr; 2027 · en cours</span>
+            <h3 class="tl__title">Bachelor IT — Administrateur Systèmes, Réseaux et Sécurité</h3>
+            <span class="tl__org">La Plateforme, Marseille</span>
+            <p class="tl__desc">
+              Formation diplômante sur 3 ans, titre RNCP niveau 6. Pédagogie par projet :
+              chaque compétence est validée en montant une infrastructure réelle en autonomie,
+              puis en la documentant. Tous les projets de cette page en sont issus.
+            </p>
+          </li>
+          <li>
+            <span class="tl__date">2014 · obtenu</span>
+            <h3 class="tl__title">BTS Systèmes Électroniques</h3>
+            <span class="tl__org">Lycée du Rempart, Marseille</span>
+            <p class="tl__desc">
+              Conception et réalisation de circuits analogiques et numériques, programmation
+              en C de systèmes embarqués pour le contrôle et l'automatisation.
+            </p>
+          </li>
+          <li>
+            <span class="tl__date">2014 · obtenue</span>
+            <h3 class="tl__title">Habilitation électrique BR</h3>
+            <span class="tl__org">Lycée du Rempart, Marseille</span>
+            <p class="tl__desc">
+              Consignation d'une installation pour son propre compte ou pour un exécutant sous
+              sa responsabilité. Application stricte des règles de sécurité en intervention.
+            </p>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-   <!-- Automatisation & Scripts -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Automatisation & Scripts</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Script Bash, PowerShell, Python</p>
-        <p class="skill-item"><span class="dir">├──</span> Crontab</p>
-        <p class="skill-item"><span class="dir">├──</span> Expressions régulières (Regex)</p>
-        <p class="skill-item"><span class="dir">├──</span> Docker & Containerization</p>
-        <p class="skill-item"><span class="dir">├──</span> Git & GitHub</p>
-        <p class="skill-item"><span class="dir">└──</span> Déploiements automatisés</p>
+    <!-- ====================== ROADMAP ====================== -->
+    <section id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="prompt">cat roadmap.md</p>
+          <h2>Certifications visées</h2>
+          <p class="lede">
+            Je n'ai encore obtenu aucune certification. Voici les quatre que je prépare, dans
+            l'ordre, parce qu'elles valident ce que je pratique déjà — pas un catalogue d'intentions.
+          </p>
+        </div>
+
+        <div class="roadmap">
+          <div class="roadmap__item">
+            <span class="roadmap__step">01</span>
+            <span>
+              <span class="roadmap__name">RHCSA — Red Hat Certified System Administrator</span>
+              <span class="roadmap__why">Formalise l'administration Linux que je pratique sur tous mes projets.</span>
+            </span>
+            <span class="badge badge--ongoing">en préparation</span>
+          </div>
+          <div class="roadmap__item">
+            <span class="roadmap__step">02</span>
+            <span>
+              <span class="roadmap__name">Cisco CCNA</span>
+              <span class="roadmap__why">Consolide le réseau : routage, commutation, sécurité — mon axe de progression.</span>
+            </span>
+            <span class="badge badge--target">visée</span>
+          </div>
+          <div class="roadmap__item">
+            <span class="roadmap__step">03</span>
+            <span>
+              <span class="roadmap__name">AZ-800 — Windows Server Hybrid Administrator</span>
+              <span class="roadmap__why">Prolonge directement mes projets Active Directory et Entra ID.</span>
+            </span>
+            <span class="badge badge--target">visée</span>
+          </div>
+          <div class="roadmap__item">
+            <span class="roadmap__step">04</span>
+            <span>
+              <span class="roadmap__name">AWS Solutions Architect Associate</span>
+              <span class="roadmap__why">Valide le socle cloud construit lors du projet Architecte AWS.</span>
+            </span>
+            <span class="badge badge--later">ensuite</span>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Programmation & Web -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Programmation & Web</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Python3, C, C++, Arduino</p>
-        <p class="skill-item"><span class="dir">├──</span> PHP, HTML, CSS3</p>
-        <p class="skill-item"><span class="dir">└──</span> Conception d'infrastructures</p>
+    <!-- ====================== CONTACT ====================== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="prompt">ssh contact@tom-ribero</p>
+          <h2>Contact</h2>
+          <p class="lede">
+            Disponible pour une alternance à partir de septembre 2026, en région marseillaise.
+            Le plus simple reste le mail.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>mail</h3>
+            <a href="mailto:tom.ribero@laplateforme.io">tom.ribero@laplateforme.io</a>
+          </div>
+          <div class="contact-card">
+            <h3>linkedin</h3>
+            <a href="https://linkedin.com/in/tom-ribero-462ba2339" target="_blank" rel="noopener">tom-ribero</a>
+          </div>
+          <div class="contact-card">
+            <h3>github</h3>
+            <a href="https://github.com/Tom-rib" target="_blank" rel="noopener">Tom-rib</a>
+          </div>
+          <div class="contact-card">
+            <h3>cv</h3>
+            <a href="https://drive.google.com/file/d/1hel9hqkbWz-muxcYHdCWozTVLr0_g98X/view?usp=sharing" target="_blank" rel="noopener">Télécharger le CV (PDF)</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
- <!-- Outils & Développement -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Outils & Développement</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> VS Code</p>
-        <p class="skill-item"><span class="dir">├──</span> Vim & Nano</p>
-        <p class="skill-item"><span class="dir">├──</span> Claude Code</p>
-        <p class="skill-item"><span class="dir">├──</span> GitHub Copilot</p>
-        <p class="skill-item"><span class="dir">├──</span> ChatGPT</p>
-        <p class="skill-item"><span class="dir">├──</span> Administration via CLI</p>
-        <p class="skill-item"><span class="dir">└──</span> Supervision réseau et systèmes</p>
-      </div>
-    </div>
-
- <!-- Cybersécurité -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Cybersécurité</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Gestion des identités (IAM)</p>
-        <p class="skill-item"><span class="dir">└──</span> Sécurité réseau & Pare-feu</p>
-        <p style="margin-top: 10px; opacity: 0.7;"><em>À venir : Pentesting, Analyse de vulnérabilités, Automatisation sécurité, Conformité & Gouvernance, Réponse aux incidents</em></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Certifications -->
-<section id="certifications">
-  <div class="section-head">
-    <h2>Certifications</h2>
-    <p>root@Tom_Ribero:~$ nano roadmap.txt</p>
-    <p>============================================================</p>
-    <p>Profil cible : Cloud / DevOps / Security Engineer</p>
-    <p>Principe : Fondations solides → Cloud Ops → DevOps → Cyber défensive → Offensive</p>
-    <p>============================================================</p>
-  </div>
-
-  <div class="terminal-grid">
-    <!-- Base / Fondamentaux -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Base / Fondamentaux</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Cisco CCNA <code class="code-todo">planned</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Networking fondamental (routage, switching, sécurité réseau)</p>
-        <p class="skill-item"><span class="dir">├──</span> RHCSA <code class="code-todo">planned</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Admin Linux certifiée (user mgmt, services, troubleshooting)</p>
-        <p class="skill-item"><span class="dir">└──</span> CompTIA Security+ <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Fondamentaux cybersécurité (threats, encryption, IAM)</p>
-      </div>
-    </div>
-
-    <!-- Admin Systèmes / Réseaux -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Admin Systèmes / Réseaux</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> AZ-800 <code class="code-todo">planned</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Windows Server on-premises (AD, DNS, DHCP, services)</p>
-        <p class="skill-item"><span class="dir">├──</span> AZ-801 <code class="code-coming">coming</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Windows Server hybride (Azure Arc, identity sync)</p>
-        <p class="skill-item"><span class="dir">└──</span> RHCE <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Red Hat Expert (automation, troubleshooting avancé)</p>
-      </div>
-    </div>
-
-    <!-- Cloud -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Cloud</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> AWS SAA <code class="code-todo">planned</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">AWS architecture et design (EC2, S3, RDS, networking)</p>
-        <p class="skill-item"><span class="dir">├──</span> MS-102 <code class="code-todo">planned</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Microsoft Cloud Admin (M365, Entra ID, Exchange)</p>
-        <p class="skill-item"><span class="dir">└──</span> AWS Security Specialty <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Sécurité AWS avancée (IAM, encryption, compliance)</p>
-      </div>
-    </div>
-
-    <!-- SysOps / Cloud Operations -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> SysOps / Cloud Operations</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> AWS SysOps Admin <code class="code-coming">coming</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">AWS operations et maintenance (monitoring, deployment)</p>
-        <p class="skill-item"><span class="dir">└──</span> Terraform Associate <code class="code-coming">coming</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Infrastructure as Code (IaC) multi-cloud</p>
-      </div>
-    </div>
-
-    <!-- DevOps -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> DevOps</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Docker Certified Associate <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Containerization (images, networks, storage)</p>
-        <p class="skill-item"><span class="dir">├──</span> Kubernetes CKA <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">K8s orchestration et administration</p>
-        <p class="skill-item"><span class="dir">├──</span> GitLab CI/CD <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Pipelines d'automatisation et déploiement continu</p>
-        <p class="skill-item"><span class="dir">├──</span> Kubernetes CKS <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">K8s sécurité avancée (RBAC, policies)</p>
-        <p class="skill-item"><span class="dir">└──</span> Vault Associate <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Gestion des secrets et authentification</p>
-      </div>
-    </div>
-
-    <!-- Cybersécurité -->
-    <div class="terminal-card">
-      <h3><span class="prompt">$</span> Cybersécurité</h3>
-      <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> SC-300 <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Microsoft Identity Engineer (Entra ID, MFA, passwordless)</p>
-        <p class="skill-item"><span class="dir">├──</span> eJPT <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Entry-level Pentesting (reconnaissance, exploitation)</p>
-        <p class="skill-item"><span class="dir">└──</span> OSCP <code class="code-coming-future">future</code></p>
-        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Advanced Pentesting (labs, rapport technique)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Contact -->
-<section id="contact">
-
-  <div class="section-head">
-    <h2>Contact</h2>
-     <p>root@Tom_Ribero:~$ ssh contact@tom-ribero</p>
-     <p>============================================================</p>
-  </div>
-  <div class="contact-grid">
-    <div class="contact-card">
-      <h3>Email</h3>
-      <p><code class="code-terminal">$ cd ~/email</code></p>
-      <a href="mailto:tom.ribero@laplateforme.io">tom.ribero@laplateforme.io</a>
-    </div>
-    <div class="contact-card">
-      <h3>LinkedIn</h3>
-      <p><code class="code-terminal">$ cd ~/linkedin</code></p>
-      <a href="https://linkedin.com/in/tom-ribero-462ba2339" target="_blank">Voir mon profil</a>
-    </div>
-    <div class="contact-card">
-      <h3>GitHub</h3>
-      <p><code class="code-terminal">$ cd ~/github</code></p>
-      <a href="https://github.com/Tom-rib" target="_blank">Tom-rib</a>
-    </div>
-  </div>
-</section>
- 
-   
   </main>
 
   <footer>
-    © <span id="year"></span> Tom Ribero — Tous droits réservés
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Tom Ribero</span>
+      <span>Construit à la main — HTML, CSS, un peu de JS.</span>
+    </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Toggle menu responsive
+    // Menu mobile
     const toggle = document.querySelector('.nav-toggle');
-    const menu = document.querySelector('.nav-menu');
+    const menu = document.getElementById('nav-menu');
 
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+
+    menu.addEventListener('click', (e) => {
+      if (e.target.tagName !== 'A') return;
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    // Surligne l'entrée de menu correspondant à la section visible
+    const links = new Map(
+      [...menu.querySelectorAll('a')].map(a => [a.getAttribute('href').slice(1), a])
+    );
+
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const link = links.get(entry.target.id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          links.forEach(a => a.removeAttribute('aria-current'));
+          link.setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-25% 0px -70% 0px' });
+
+    links.forEach((_, id) => {
+      const section = document.getElementById(id);
+      if (section) spy.observe(section);
     });
   </script>
 </body>
