@@ -25,6 +25,7 @@ spécialisation en cybersécurité.
 
 | Projet | Ce que j'y ai fait |
 |---|---|
+| **[Terraform — lab de cybersécurité](https://github.com/Tom-rib/Terraform)** | Infrastructure as Code sur VMware Workstation via l'API `vmrest` : deux VM Debian 12 clonées et configurées par provisioners `remote-exec`, découverte d'IP par data source `external`, configuration complémentaire Ansible, secrets hors dépôt |
 | **Ansible — automatisation & durcissement** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
 | **[Kubernetes K3S](https://github.com/Tom-rib/kubernetes)** | Cluster 3 nœuds sur Debian, applications conteneurisées avec replicas, stockage persistant, ConfigMaps/Secrets, RBAC, déploiements Helm |
 | **[Docker Swarm](https://github.com/Tom-rib/Docker_Swarm)** | Cluster multi-nœuds haute disponibilité, volumes NFS partagés, plans PCA/PRA éprouvés par tests de panne simulée |
