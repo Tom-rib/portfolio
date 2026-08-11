@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
-  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure : Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, Active Directory, virtualisation.">
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure : Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, Active Directory, virtualisation.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,6 +226,29 @@
 
         <h3 class="subhead subhead--spaced">Le reste du labo</h3>
         <div class="grid">
+
+          <article class="card" id="p-cicd">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Github_Action_CI-CD" target="_blank" rel="noopener">github-actions-ci-cd</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Chaîne d'intégration et de déploiement continus sécurisée : chaque push sur la branche
+              principale déclenche les vérifications, et seul un build vert déclenche le déploiement
+              — sans qu'aucun secret ne transite par le dépôt.
+            </p>
+            <ul class="card__did">
+              <li>Workflow GitHub Actions complet, découpé en 8 étapes du build au rollback</li>
+              <li>Application web minimale + script Bash de 5 contrôles d'intégrité bloquants</li>
+              <li>Déploiement idempotent par playbook Ansible sur Debian (Nginx + vhost validé)</li>
+              <li>Clés SSH en GitHub Secrets, chargées via <code>ssh-agent</code> sans écriture sur disque</li>
+              <li><code>inventory.ini</code> généré à la volée en <code>600</code> puis détruit, contrôle MITM par <code>known_hosts</code></li>
+              <li>Traçabilité : le SHA du commit déployé est inscrit dans la page servie</li>
+            </ul>
+            <ul class="stack">
+              <li>GitHub Actions</li><li>CI/CD</li><li>Bash</li><li>Ansible</li><li>Nginx</li><li>SSH</li><li>Debian</li>
+            </ul>
+          </article>
 
           <article class="card" id="p-entra">
             <div class="card__head">
@@ -490,6 +513,11 @@
                 <span class="skill__name">Git &amp; GitHub</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
                 <span class="skill__proof">↳ tous les projets sont versionnés et documentés</span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">CI/CD (GitHub Actions)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-cicd">github-actions-ci-cd</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Terraform &amp; Infrastructure as Code</span>

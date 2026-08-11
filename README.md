@@ -33,6 +33,7 @@ spécialisation en cybersécurité.
 
 ### Le reste du labo
 
+- **[GitHub Actions — CI/CD sécurisé](https://github.com/Tom-rib/Github_Action_CI-CD)** — Pipeline complet build → vérifications → déploiement Ansible sur Nginx, secrets en GitHub Secrets, `ssh-agent` sans clé sur disque, inventaire éphémère et stratégie de rollback
 - **[ad-enterprise](https://github.com/Tom-rib/ad-enterprise)** — Sécurisation Microsoft Entra ID : modèle en tiers, MFA, accès conditionnel, automatisation PowerShell/Graph
 - **[NexusVirtualis](https://github.com/Tom-rib/NexusVirtualis)** — Étude comparative de 4 hyperviseurs type 1 (ESXi, Proxmox, Hyper-V, XCP-ng) en virtualisation imbriquée
 - **[MINILAB](https://github.com/Tom-rib/documentation_minilab)** — Infrastructure réseau associative : LDAP, NFS, DNS, DHCP, VPN, clients légers Debian
